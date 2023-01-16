@@ -4,6 +4,7 @@ import Footer from '@/components/Footer/Footer'
 import Head from 'next/head'
 import Image from 'next/image'
 import { MdOutlineHighQuality } from 'react-icons/md'
+import {RxHamburgerMenu} from 'react-icons/rx'
 
 
 export default function Home() {
@@ -23,7 +24,7 @@ export default function Home() {
             <div>
               <h1 className='text-white text-4xl font-bold'>LOGO</h1>
             </div>
-              <div>
+              <div className='hidden 2xl:flex xl:flex lg:flex md:flex'>
                 <ul className='flex gap-5 '>
                   <li><a href="#" className='font-sansita font-semibold text-amber-500 bg-black bg-opacity-60 px-5 py-1 rounded-xl '>Home</a></li>
                   <li><a href="#" className='font-sansita font-semibold text-amber-500 bg-black bg-opacity-60 px-5 py-1 rounded-xl '>Yakında</a></li>
@@ -32,8 +33,8 @@ export default function Home() {
                   <li><a href="#" className='font-sansita font-semibold text-amber-500 bg-black bg-opacity-60 px-5 py-1 rounded-xl '>Yakında</a></li>
                 </ul>
               </div>
-              <div>
-                  {/* boş div */}
+              <div className='flex 2x:hidden xl:hidden lg:hidden md:hidden'>
+                  <button className='bg-black bg-opacity-60 px-2 py-1 text-white'><RxHamburgerMenu/></button>
               </div>
           </nav>
           {/* Navbar End */}
@@ -53,7 +54,7 @@ export default function Home() {
 
           <div className='flex flex-col justify-center h-34 items-center gap-1'>
             <h1 className='text-amber-700 font-sansita font-bold text-2xl'>Neden Biz</h1>
-            <p className='w-[700px] text-white font-semibold'>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Similique, esse dolores. Fugit laboriosam rem vel impedit debitis veniam voluptas quis, hic dolorem, aperiam exercitationem, molestiae excepturi! Temporibus doloremque atque aliquid.</p>
+            <p className='2xl:w-[700px] xl:w-[700px] lg:w-[600px] md:w-[500px] w-96 text-white font-semibold'>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Similique, esse dolores. Fugit laboriosam rem vel impedit debitis veniam voluptas quis, hic dolorem, aperiam exercitationem, molestiae excepturi! Temporibus doloremque atque aliquid.</p>
           </div>
 
           <div className='flex justify-center mt-5 flex-wrap gap-20'>

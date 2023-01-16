@@ -8,8 +8,8 @@ const Footer = () => {
         <div>
           <h1 className="text-4xl font-sansita font-bold">LOGO</h1>
         </div>
-        <div>
-            <ul className="flex gap-5 font-semibold text-md">
+        <div className="">
+            <ul className="flex flex-col gap-2 font-semibold text-md">
                 <li>Home</li>
                 <li>Yakında</li>
                 <li>Yakında</li>
