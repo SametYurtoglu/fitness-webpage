@@ -27,10 +27,8 @@ export default function Home() {
               <div className='hidden 2xl:flex xl:flex lg:flex md:flex'>
                 <ul className='flex gap-5 '>
                   <li><a href="#" className='font-sansita font-semibold text-amber-500 bg-black bg-opacity-60 px-5 py-1 rounded-xl '>Home</a></li>
-                  <li><a href="#" className='font-sansita font-semibold text-amber-500 bg-black bg-opacity-60 px-5 py-1 rounded-xl '>Yakında</a></li>
-                  <li><a href="#" className='font-sansita font-semibold text-amber-500 bg-black bg-opacity-60 px-5 py-1 rounded-xl '>Yakında</a></li>
-                  <li><a href="#" className='font-sansita font-semibold text-amber-500 bg-black bg-opacity-60 px-5 py-1 rounded-xl '>Yakında</a></li>
-                  <li><a href="#" className='font-sansita font-semibold text-amber-500 bg-black bg-opacity-60 px-5 py-1 rounded-xl '>Yakında</a></li>
+                  <li><a href="#Pack" className='font-sansita font-semibold text-amber-500 bg-black bg-opacity-60 px-5 py-1 rounded-xl '>Paketlerimiz</a></li>
+                  <li><a href="#" className='font-sansita font-semibold text-amber-500 bg-black bg-opacity-60 px-5 py-1 rounded-xl '>Hakkımızda</a></li>
                 </ul>
               </div>
               <div className='flex 2x:hidden xl:hidden lg:hidden md:hidden'>
@@ -86,6 +84,7 @@ export default function Home() {
 
 
         {/* Shop Cards */}
+          <div id='Pack'>
           <div className='flex flex-col items-center gap-10 mt-5'>
               <div>
                 <h1 className='text-3xl text-white font-sansita'>Paketlerimizi Aylık/Yıllık</h1>
@@ -98,6 +97,7 @@ export default function Home() {
                 <ShopCards title='Vücut Geliştirme' price='140€' liste1='Deneme' liste2='Deneme' liste3='Deneme' liste4='Deneme' liste5='Deneme' liste6='Deneme' liste7='Deneme'/>
               </div>
 
+          </div>
           </div>
         {/* Shop Cards End */}
 
