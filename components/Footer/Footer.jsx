@@ -19,12 +19,10 @@ const Footer = () => {
         </div>
       </div>
         <div className="w-full h-[50px] bg-gray-600 flex items-center justify-center">
-            <h1 className="text-white font-bold">Copyright © 2023 all right reserved.</h1>
+        <h1 className="text-white font-bold">Copyright © 2023 all right reserved. Designer and Developer <Link href="https://github.com/SametYurtoglu" target={"_blank"} className="font-sansita text-amber-600">NotFounds</Link></h1>
         </div>
     </div>
   );
 };
-
-{/* <h1 className="text-white font-bold">Copyright © 2023 all right reserved. Designer and Developer <Link href="https://github.com/SametYurtoglu" target={"_blank"} className="font-sansita text-amber-600">NotFounds</Link></h1> */}
 
 export default Footer;
