@@ -68,7 +68,7 @@ export default function Home() {
         {/* cards end */}
 
 
-        <div className='bg-amber-500 w-full h-[180px] mt-28 flex justify-between px-28 items-center'>
+        <div className='bg-amber-500 w-full h-[180px] mt-28 flex justify-between px-2 2xl:px-28 xl:px-28 lg:px-28 md:px-28  items-center'>
             <div>
                 <h1 className='text-4xl font-sansita font-bold'>Quailty Fitness...</h1>
             </div>
