@@ -23,7 +23,7 @@ export default function Home() {
         {/* bg */}
       <div className='bg-image w-full h-screen bg-cover bg-center'>
         {/* Navbar */}
-            <div className='w-full top-0 left-0 fixed'>
+            <div className='w-full top-0 left-0 fixed z-10'>
                 <div className="md:flex items-center justify-between py-4 md:px-10 px-7">
                   <div>
                     <h1 className='text-5xl font-bold font-sansita text-white'>LOGO</h1>
