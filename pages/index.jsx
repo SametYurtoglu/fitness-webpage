@@ -7,6 +7,7 @@ import { MdOutlineHighQuality } from 'react-icons/md'
 import {RxHamburgerMenu} from 'react-icons/rx'
 import {AiOutlineClose} from 'react-icons/ai'
 import { useState } from 'react'
+import Cardİmages from '@/components/Image/Cardİmages'
 
 
 export default function Home() {
@@ -23,7 +24,7 @@ export default function Home() {
         {/* bg */}
       <div className='bg-image w-full h-screen bg-cover bg-center'>
         {/* Navbar */}
-            <div className='w-full top-0 left-0 fixed z-10'>
+            <div className='w-full top-0 left-0 fixed z-50 transition-all'>
                 <div className="md:flex items-center justify-between py-4 md:px-10 px-7">
                   <div>
                     <h1 className='text-5xl font-bold font-sansita text-white'>LOGO</h1>
@@ -31,10 +32,10 @@ export default function Home() {
                   <div onClick={() => setOpen(!open)} className='text-2xl absolute right-8 top-6 md:hidden cursor-pointer bg-black py-1 px-2 bg-opacity-60 text-white flex items-center'>
                   <ion-icon name={open ? 'close':'menu'} className=''></ion-icon>
                   </div>
-                  <ul className={`md:flex md:items-center md:pb-0 pb-12 absolute md:static xl:bg-transparent md:bg-transparent lg:bg-transparent 2xl:bg-transparent bg-white md:z-auto z-[-1] left-0 w-full md:w-auto md:pl-0 pl-9 transition-all duration-500 ease-in ${open ? 'top-20 opacity-75':'top-[-490px]'} gap-5`}>
-                    <li className='font-sansita 2xl:bg-black xl:bg-black lg:bg-black md:bg-black 2xl:bg-opacity-60 xl:bg-opacity-60 lg:bg-opacity-60 md:bg-opacity-60 text-md text-amber-600 2xl:py-1 2xl:px-3 xl:py-1 xl:px-3 lg:py-1 lg:px-3 md:py-1 md:px-3 rounded-xl'><a href="#">Home</a></li>
-                    <li className='font-sansita 2xl:bg-black xl:bg-black lg:bg-black md:bg-black 2xl:bg-opacity-60 xl:bg-opacity-60 lg:bg-opacity-60 md:bg-opacity-60 text-md text-amber-600 2xl:py-1 2xl:px-3 xl:py-1 xl:px-3 lg:py-1 lg:px-3 md:py-1 md:px-3 rounded-xl'><a href="#Pack">Paketlerimiz</a></li>
-                    <li className='font-sansita 2xl:bg-black xl:bg-black lg:bg-black md:bg-black 2xl:bg-opacity-60 xl:bg-opacity-60 lg:bg-opacity-60 md:bg-opacity-60 text-md text-amber-600 2xl:py-1 2xl:px-3 xl:py-1 xl:px-3 lg:py-1 lg:px-3 md:py-1 md:px-3 rounded-xl'><a href="#">Hakkımızda</a></li>
+                  <ul className={`md:flex md:items-center md:pb-0 pb-12 absolute md:static md:bg-transparent bg-white md:z-auto z-[-1] left-0 w-full md:w-auto md:pl-0 pl-9 transition-all duration-500 ease-in ${open ? 'top-20 opacity-75':'top-[-490px]'} gap-5`}>
+                    <li className='font-sansita md:bg-opacity-60 text-md text-amber-600 md:bg-black md:py-1 md:px-3 rounded-xl'><a href="#">Home</a></li>
+                    <li className='font-sansita md:bg-opacity-60 text-md text-amber-600 md:bg-black md:py-1 md:px-3 rounded-xl'><a href="#Pack">Paketlerimiz</a></li>
+                    <li className='font-sansita md:bg-opacity-60 text-md text-amber-600 md:bg-black md:py-1 md:px-3 rounded-xl'><a href="#">Hakkımızda</a></li>
                   </ul>
                 </div>
             </div>
@@ -86,9 +87,22 @@ export default function Home() {
         </div>
 
 
+
+            {/* Image */}
+              <div className='bg-black bg-opacity-50 w-full h-[300px] mt-20 hidden md:flex md:justify-center'>
+                  <div className='flex justify-center items-center h-full'>
+                      <Cardİmages image={'/images/vücut.jpg'}/>
+                      <Cardİmages image={'/images/bg-image2.jpeg'}/>
+                      <Cardİmages image={'/images/bg-image.jpeg'}/>
+                      <Cardİmages image={'/images/vücut.jpg'}/>
+                  </div>
+              </div>
+            {/* Image End */}
+
+
         {/* Shop Cards */}
           <div id='Pack'>
-          <div className='flex flex-col items-center gap-10 mt-5'>
+          <div className='flex flex-col items-center gap-10 mt-20'>
               <div>
                 <h1 className='text-3xl text-white font-sansita'>Paketlerimizi Aylık/Yıllık</h1>
               </div>
